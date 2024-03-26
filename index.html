@@ -56,147 +56,211 @@
             }
         }
     </style>
-    <style>.share-btn{
-        position: fixed;
-        bottom: 16px;
-        left: 10px;
-        width: 50px;
-        height: 50px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        font-size: 24px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-    
-    .share-options{
-        position: fixed;
-        bottom: 50%;
-        left: 30%;
-        width: auto;
-        height: auto;
-        transform-origin: bottom left;
-        transform: scale(0);
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        background: rgba(15, 15, 15, 0.5);
-        color: #fff;
-        padding: 20px;
-        font-family: 'roboto';
-        transition: .5s;
-        transition-delay: .5s;;
-    }
-    
-    .share-options.active{
-        transform: scale(1);
-        transition-delay: 0s;
-    }
-    
-    .title{
-        opacity: 0;
-        transition: .5s;
-        transition-delay: 0s;
-        font-size: 20px;
-        text-transform: capitalize;
-        border-bottom: 1px solid #fff;
-        width: fit-content;
-        padding: 0 20px 3px 0;
-    }
-    
-    .social-media{
-        opacity: 0;
-        transition: .5s;
-        transition-delay: 0s;
-        width: 250px;
-        height: 120px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 10px 0;
-    }
-    
-    .social-media-btn{
-        border: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: #000;
-        color: #fff;
-        line-height: 50px;
-        font-size: 25px;
-        cursor: pointer;
-        margin: 0 5px;
-        text-align: center;
-    }
-    
-    .social-media-btn:nth-child(1){
-        background: #FFA654;
-    }
-    
-    .social-media-btn:nth-child(2){
-        background: #25D366;
-    }
-    
-    .social-media-btn:nth-child(3){
-        background: #E4405F;
-    }
-    
-    .social-media-btn:nth-child(4){
-        background: #1DA1F2;
-    }
-    
-    .social-media-btn:nth-child(5){
-        background: #1877F2;
-    }
-    
-    .social-media-btn:nth-child(6){
-        background: #0A66C2;
-    }
-    
-    .link-container{
-        opacity: 0;
-        transition: .5s;
-        transition-delay: 0s;
-        width: 100%;
-        position: relative;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        border-radius: 40px;
-        background-color: #fff;
-        overflow: hidden;
-        padding: 0 10px;
-    }
-    
-    .link{
-        width: 80%;
-        height: 100%;
-        line-height: 40px;
-        color: #000;
-    }
-    
-    .copy-btn{
-        position: absolute;
-        right: 0;
-        cursor: pointer;
-        background: #000;
-        color: #fff;
-        border: none;
-        height: 100%;
-        width: 30%;
-        text-transform: capitalize;
-        font-size: 16px;
-    }
-    
-    .share-options.active .title,
-    .share-options.active .social-media,
-    .share-options.active .link-container{
-        opacity: 1;
-        transition: .5s;
-        transition-delay: .5s;
-    }</style>
+    <style>
+        .share-btn {
+            position: fixed;
+            bottom: 16px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .share-options {
+            position: fixed;
+            bottom: 50%;
+            left: 30%;
+            width: auto;
+            height: auto;
+            transform-origin: bottom left;
+            transform: scale(0);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: rgba(15, 15, 15, 0.5);
+            color: #fff;
+            padding: 20px;
+            font-family: 'roboto';
+            transition: .5s;
+            transition-delay: .5s;
+            ;
+        }
+
+        .share-options.active {
+            transform: scale(1);
+            transition-delay: 0s;
+        }
+
+        .title {
+            opacity: 0;
+            transition: .5s;
+            transition-delay: 0s;
+            font-size: 20px;
+            text-transform: capitalize;
+            border-bottom: 1px solid #fff;
+            width: fit-content;
+            padding: 0 20px 3px 0;
+        }
+
+        .social-media {
+            opacity: 0;
+            transition: .5s;
+            transition-delay: 0s;
+            width: 250px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+
+        .social-media-btn {
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            line-height: 50px;
+            font-size: 25px;
+            cursor: pointer;
+            margin: 0 5px;
+            text-align: center;
+        }
+
+        .social-media-btn:nth-child(1) {
+            background: #FFA654;
+        }
+
+        .social-media-btn:nth-child(2) {
+            background: #25D366;
+        }
+
+        .social-media-btn:nth-child(3) {
+            background: #E4405F;
+        }
+
+        .social-media-btn:nth-child(4) {
+            background: #1DA1F2;
+        }
+
+        .social-media-btn:nth-child(5) {
+            background: #1877F2;
+        }
+
+        .social-media-btn:nth-child(6) {
+            background: #0A66C2;
+        }
+
+        .link-container {
+            opacity: 0;
+            transition: .5s;
+            transition-delay: 0s;
+            width: 100%;
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border-radius: 40px;
+            background-color: #fff;
+            overflow: hidden;
+            padding: 0 10px;
+        }
+
+        .link {
+            width: 80%;
+            height: 100%;
+            line-height: 40px;
+            color: #000;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            background: #000;
+            color: #fff;
+            border: none;
+            height: 100%;
+            width: 30%;
+            text-transform: capitalize;
+            font-size: 16px;
+        }
+
+        .share-options.active .title,
+        .share-options.active .social-media,
+        .share-options.active .link-container {
+            opacity: 1;
+            transition: .5s;
+            transition-delay: .5s;
+        }
+
+        /* photoes */
+        /* General Styles */
+        .container--10 {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            margin-left: 194px;
+        }
+
+        .con-10 {
+            text-align: center;
+        }
+
+        .con-10_title h4 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .con-10_title h3 {
+            font-size: 32px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .photo-section {
+            margin-top: 20px;
+        }
+
+        .photo-section h3 {
+            font-size: 28px;
+            color: #444;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .photo-item {
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media Query for Phones */
+        @media only screen and (max-width: 600px) { .container--10 {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            /* margin-left: 194px; */
+        }
+            .photo-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
 
 </head>
 
@@ -555,7 +619,7 @@
                         <div class="con-8_box-down">
                             <h4>Yusif Arifoviç</h4>
                             <p>Trainer</p>
-                            <button class="btn" onclick="trainer()" >Contact</button>
+                            <button class="btn" onclick="trainer()">Contact</button>
                         </div>
                     </div>
                     <div class="con-8_box">
@@ -586,84 +650,51 @@
         <section class="container--10">
             <div class="con-10">
                 <div class="con-10_title">
-                    <h4>Our Blog</h4>
-                    <h3>Latest Article From Blog</h3>
+                    <h4>Gym Tour</h4>
+                    <h3>HAVEA LOOK TO OUR GYM</h3>
                 </div>
                 <div class="con-10_boxes">
-                    <div class="blog">
-                        <img class="blog_img" src="./src1/img/blog-1.jpg">
-                        <div class="blog_item">
-                            <div class="blog_column">
-                                <div class="blog_row">
-                                    <div class="rounded-circle">
-                                        <small>29</small>
-                                        <strong>JAN</strong>
-                                        <small>2023</small>
-                                    </div>
-                                    <div class="blog_column-2">
-                                        <h3>Women Workout Program</h3>
-                                        <div class="blog_row_2">
-                                            <div class="blog_row_item">
-                                                <i class="fa fa-user"></i>
-                                                <p>Admin</p>
-                                            </div>
-                                            <div class="blog_row_item">
-                                                <i class="fa fa-folder"></i>
-                                                <p>Web Design</p>
-                                            </div>
-                                            <div class="blog_row_item">
-                                                <i class="fa fa-comments"></i>
-                                                <p>17 Comments</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="blog_p"><b>10 Week Upper/Lower Workout Program for Women</b><br>
-                                    Build muscle with this upper/lower workout for women. It combines lower rep ranges
-                                    with higher rep ranges on both upper & lower days to maximize your results!</p>
-                                <a class="blog_btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    <!-- Existing Blog Posts -->
+                    <!-- Add new section for 10 photos -->
+                    <div class="photo-section">
+                        <h3>Our Latest Photos</h3>
+                        <div class="photo-grid">
+                            <div class="photo-item">
+                                <img src="./src1/img/tour1.jpeg" alt="Photo 1">
                             </div>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img class="blog_img" src="./src1/img/blog-2.jpg">
-                        <div class="blog_item">
-                            <div class="blog_column">
-                                <div class="blog_row">
-                                    <div class="rounded-circle">
-                                        <small>13</small>
-                                        <strong>FEB</strong>
-                                        <small>2023</small>
-                                    </div>
-                                    <div class="blog_column-2">
-                                        <h3>Man Workout Program</h3>
-                                        <div class="blog_row_2">
-                                            <div class="blog_row_item">
-                                                <i class="fa fa-user"></i>
-                                                <p>Admin</p>
-                                            </div>
-                                            <div class="blog_row_item">
-                                                <i class="fa fa-folder"></i>
-                                                <p>Web Design</p>
-                                            </div>
-                                            <div class="blog_row_item">
-                                                <i class="fa fa-comments"></i>
-                                                <p>128 Comments</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="blog_p"><b>Upper/Lower 4 Day Bodybuilding Workout</b><br>
-                                    Reach your muscle building goals with this balanced 4 day training split that mixes
-                                    heavy compound exercises, machines, cables and incorporates 3 second negatives.</p>
-                                <a class="blog_btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour2.jpeg" alt="Photo 2">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour3.jpg" alt="Photo 3">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour4.jpg" alt="Photo 4">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour5.jpg" alt="Photo 5">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour6.jpg" alt="Photo 6">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour7.jpg" alt="Photo 7">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour8.jpg" alt="Photo 8">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour9.jpeg" alt="Photo 9">
+                            </div>
+                            <div class="photo-item">
+                                <img src="./src1/img/tour10.webp" alt="Photo 10">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Blog End-->
+
 
     </main>
     <footer>
@@ -717,8 +748,7 @@
             <p class="rights">
                 <b> © AnabolicGYM</b>. All Rights Reserved. Designed by <a target="_blank"
                     href="https://www.linkedin.com/in/soumyadip-ojha">Soumyadip Ojha</a>
-               <a target="_blank"
-                    href="https://www.linkedin.com/in/shrutimishra30/">Shruti Mishra</a>
+                <a target="_blank" href="https://www.linkedin.com/in/shrutimishra30/">Shruti Mishra</a>
             </p>
         </div>
     </footer>
@@ -747,7 +777,7 @@
             </div>
         </div>
     </div>
-<!-- share end -->
+    <!-- share end -->
     <script src="./src1/js/main.js"></script>
     <script src="./src1/js/bmi.js"></script>
     <script src="./src1/js/table.js"></script>
