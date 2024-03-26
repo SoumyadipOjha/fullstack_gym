@@ -1,497 +1,545 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLEX ZONE FITNESS</title>
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.90em' font-size='90'%3E%F0%9F%8F%8B%EF%B8%8F%3C/text%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GYM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./src1/css/main.css'>
+    <link rel="stylesheet" type="text/css" media='screen' href="./src1/css/animation.css">
+    <link rel="stylesheet" type="text/css" media='screen' href="./src1/flaticon/font/flaticon.css">
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
 </head>
 
 <body>
-
-    <!-- Start Header  -->
-    <nav>
-        <div class="wrapper">
-          <div class="logo"><a href="#">Evergreen Fitness</a></div>
-          <input type="radio" name="slider" id="menu-btn">
-          <input type="radio" name="slider" id="close-btn">
-          <ul class="nav-links">
-            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="whyJOin.html">WHY JOIN</a></li>
-            <li><a href="map.html">FIND US</a></li>
-            <li><a href="choice.html">TRY US</a></li>
-            <li><a href="#price">PACKAGES</a></li>
-            <li><a href="#">FEEDBACK</a></li>
-          </ul>
-          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-        </div>
-      </nav>
-      
-      <div class="body-text">
-        <div class="title">Responsive Dropdown and Mega Menu</div>
-        <div class="sub-title">using only HTML & CSS</div>
-      </div>
-    <!-- End Header  -->
-
-    <!-- Start Home -->
-    <section class="home wow flash" id="home">
-        <div class="container">
-            <h1 class="wow slideInLeft" data-wow-delay="1s">
-                <br>Fuel your fire <span></span> .</h1>
-            <h1 class="wow slideInRight" data-wow-delay="1s">We are ready to <span>fit you</span>.</h1>
-        </div>
-        <!-- go down -->
-        <a href="#about" class="go-down">
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-        </a>
-        <!-- go down -->
-
-    </section>
-    <!-- End Home -->
-
-
-    <!-- Start About -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="content">
-                <div class="box wow bounceInUp">
-                    <div class="inner">
-                        <div class="img">
-                            <img src="images/about1.jpg" alt="about" />
-                        </div>
-                        <div class="text">
-                            <h4>Free Consultation</h4>
-                            <p>We offer free consultations at our gym, providing you with personalized fitness
-                                assessments and expert guidance to kickstart your fitness journey. Take advantage of
-                                this opportunity to discuss your goals and create a customized plan with our experienced
-                                trainers.</p>
-                        </div>
-                    </div>
+    <header>
+        <nav class="navbar">
+            <div class="nav-up">
+                <a href="./index.html" class="navbar-brand">
+                    <h1 class="brand">GYMNAST</h1>
+                </a>
+                <i id="hamburger" class="fas fa-bars"></i>
+                <div class="nav-right">
+                    <a href="./index.html" class="nav-item active">Home</a>
+                    <a href="./src1/pages/about.html" class="nav-item">About Us</a>
+                    <a href="./src1/pages/features.html" class="nav-item">Our Features</a>
+                    <a href="./src1/pages/classes.html" class="nav-item">Classes</a>
+                    <a href="./src1/pages/contact.html" class="nav-item">Contact</a>
                 </div>
-                <div class="box wow bounceInUp" data-wow-delay="0.2s">
-                    <div class="inner">
-                        <div class="img">
-                            <img src="images/about2.jpg" alt="about" />
-                        </div>
-                        <div class="text">
-                            <h4>Best Training</h4>
-                            <p>Achieve your fitness goals with the best training at our gym. Our expert trainers provide
-                                personalized workouts and guidance to help you maximize results and reach your peak
-                                performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box wow bounceInUp" data-wow-delay="0.4s">
-                    <div class="inner">
-                        <div class="img">
-                            <img src="images/about3.jpg" alt="about" />
-                        </div>
-                        <div class="text">
-                            <h4>Build Perfect Body</h4>
-                            <p>Achieve your goal of building the perfect body at our gym with expert trainers and
-                                state-of-the-art equipment. Our comprehensive fitness programs will help you sculpt and
-                                strengthen your physique for the results you desire.</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="hamburgermenu" id="open">
+                <i class="fas fa-times"></i>
+                <a href="./index.html" class="nav-item active">Home </a>
+                <a href="./src1/pages/about.html" class="nav-item">About Us</a>
+                <a href="./src1/pages/features.html" class="nav-item">Our Features</a>
+                <a href="./src1/pages/classes.html" class="nav-item">Classes</a>
+                <a href="./src1/pages/contact.html" class="nav-item">Contact</a>
+
+            </div>
+        </nav>
+        <div class="container--1">
+            <div class="head">
+                <div class="head__inner">
+                    <h3>Gym & Fitness Center</h3>
+                    <h2>Best Gym In Town</h2>
+                    <a href="choice.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Join Us Now</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End About -->
-
-
-    <!-- Start Service -->
-    <section class="service" id="service">
-        <div class="container">
-            <div class="content">
-                <div class="text box wow slideInLeft">
-                    <h2>Services</h2>
-                    <p>In our gym, we provide a comprehensive range of services to ensure you have everything you need
-                        for a successful fitness journey. Our state-of-the-art facilities include well-equipped workout
-                        areas, cardio machines, and free weights for strength training enthusiasts. Additionally, our
-                        certified trainers are available to offer personalized fitness plans and guidance, helping you
-                        achieve your goals efficiently and safely.</p>
-                    <p>For those seeking extra motivation and variety in their workouts, we offer group fitness classes
-                        such as yoga, pilates, and circuit training. Our gym is also equipped with amenities like locker
-                        rooms, showers, and a smoothie bar, creating a comfortable and convenient environment for your
-                        fitness needs. With our array of services and dedicated staff, we're committed to helping you
-                        reach your fitness aspirations.</p>
-                    <a href="" class="btn">Start Now</a>
+        <img class="carousel-1" src="./src1/img/carousel-1.jpg">
+    </header>
+    <main>
+        <div class="bodymuscle">
+            <div class="bodybuilding block">
+                <i class="flaticon-six-pack  six-pack"></i>
+                <h3 class="bold">Body Building</h3>
+                <p>lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores, dolor
+                    sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at..</p>
+                <a class="button">Join Now</a>
+            </div>
+            <div class="musclegain block">
+                <i class="flaticon-bodybuilding body-icon"></i>
+                <h3 class="bold">Muscle Gain</h3>
+                <p>lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores, dolor
+                    sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at..</p>
+                <a class="button">Join Now</a>
+            </div>
+        </div>
+        <section class="container--2">
+            <div class="con-2">
+                <div class="con-2__img">
+                    <img src="./src1/img/about.jpg">
                 </div>
-                <div class="accordian box wow slideInRight">
-                    <div class="accordian-container active">
-                        <div class="head">
-                            <h4>Cardiovascular Equipment</h4>
-                            <span class="fa fa-angle-down"></span>
+                <div class="con-2__text">
+                    <h2 class="bold">10 Years Experience</h2>
+                    <!-- <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum -->
+                    <!-- </p> -->
+                    <div class="con-2__boxes">
+                        <div class="con-2__box">
+                            <i class="flaticon-barbell"></i>
+                            <h4 class="bold">Certified GYM Center</h4>
+                            <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
                         </div>
-                        <div class="body">
-                            <p>Our gym is equipped with a comprehensive selection of cardiovascular equipment, including
-                                treadmills, stationary bikes, elliptical machines, and rowing machines. Whether you're
-                                looking to improve endurance, burn calories, or boost your cardiovascular health, our
-                                state-of-the-art machines are designed to help you achieve your fitness goals
-                                effectively and efficiently.</p>
-                        </div>
-                    </div>
-                    <div class="accordian-container">
-                        <div class="head">
-                            <h4>Strength Training Equipment</h4>
-                            <span class="fa fa-angle-up"></span>
-                        </div>
-                        <div class="body">
-                            <p>Our gym is equipped with a comprehensive range of strength training equipment, including
-                                free weights, resistance machines, and power racks. Whether you're a beginner looking to
-                                build strength or an experienced lifter seeking to push your limits, our well-maintained
-                                and diverse selection of equipment will help you achieve your fitness goals effectively.
-                            </p>
+                        <div class="con-2__box">
+                            <i class="flaticon-medal"></i>
+                            <h4 class="bold">Award Winning</h4>
+                            <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
                         </div>
                     </div>
-                    <div class="accordian-container">
-                        <div class="head">
-                            <h4>Group Fitness Class</h4>
-                            <span class="fa fa-angle-up"></span>
-                        </div>
-                        <div class="body">
-                            <p> Our gym features dynamic group fitness classes designed to motivate and challenge you.
-                                Join our energetic community and achieve your fitness goals while enjoying a fun and
-                                supportive atmosphere.</p>
-                        </div>
+                    <a class="button" href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="container--3">
+            <div class="con-3_boxes">
+                <div class="con-3_box">
+                    <i class="flaticon-training display-3 text-primary mr-3"></i>
+                    <div class="con-3_column">
+                        <h2>Progression</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        </p>
                     </div>
-                    <div class="accordian-container">
-                        <div class="head">
-                            <h4>Other Services</h4>
-                            <span class="fa fa-angle-up"></span>
-                        </div>
-                        <div class="body">
-                            <p>In addition to our fitness classes, our gym provides a range of complementary services to
-                                enhance your wellness journey. From personalized training sessions with certified
-                                instructors to nutrition guidance and state-of-the-art equipment, we offer a holistic
-                                fitness experience tailored to your needs. Join us to explore these services and achieve
-                                your fitness goals efficiently and effectively.</p>
-                        </div>
+                </div>
+                <div class="con-3_box red">
+                    <i class="flaticon-weightlifting"></i>
+                    <div class="con-3_column">
+
+                        <h2>Workout</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        </p>
+                    </div>
+                </div>
+                <div class="con-3_box">
+                    <i class="flaticon-treadmill"></i>
+                    <div class="con-3_column">
+                        <h2>Nutrition</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Service -->
-
-
-    <!-- Start Today -->
-    <section class="start-today">
-        <div class="container">
-            <div class="content">
-                <div class="box text wow slideInLeft">
-                    <h2>Start Your Training Today</h2>
-                    <p> Embark on your fitness journey today at our gym! Our state-of-the-art facilities, experienced
-                        trainers, and diverse workout programs await you. Start achieving your health and fitness goals
-                        now and discover the benefits of an active lifestyle.
-                    </p>
-                    <a href="" class="btn">Start Now</a>
+        </section>
+        <section class="container--4">
+            <h4 class="c4_title-1">Why Choose Us?</h4>
+            <h4 class="c4_title-2">Benefits of Joining Our GYM </h4>
+            <div class="con-4_boxes">
+                <div class="con-4_box">
+                    <div class="con-4_box-img">
+                        <img src="./src1/img/feature-1.jpg">
+                    </div>
+                    <div class="con-4_box-text">
+                        <h4>Videos Instruction
+                        </h4>
+                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
+                            invidunt, dolore tempor diam ipsum takima erat tempor</p>
+                    </div>
                 </div>
-                <div class="box img wow slideInRight">
-                    <img src="images/gallery4.jpg" alt="start today" />
+
+                <div class="con-4_box">
+                    <div class="con-4_box-img">
+                        <img src="./src1/img/feature-2.jpg">
+                    </div>
+                    <div class="con-4_box-text">
+                        <h4>Training Calendar
+                        </h4>
+                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
+                            invidunt, dolore tempor diam ipsum takima erat tempor</p>
+                    </div>
+                </div>
+
+                <div class="con-4_box">
+                    <div class="con-4_box-img">
+                        <img src="./src1/img/feature-3.jpg">
+                    </div>
+                    <div class="con-4_box-text">
+                        <h4>Free Apps & WiFi
+                        </h4>
+                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
+                            invidunt, dolore tempor diam ipsum takima erat tempor</p>
+                    </div>
+                </div>
+
+                <div class="con-4_box">
+                    <div class="con-4_box-img">
+                        <img src="./src1/img/feature-4.jpg">
+                    </div>
+                    <div class="con-4_box-text">
+                        <h4>Community Support
+                        </h4>
+                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
+                            invidunt, dolore tempor diam ipsum takima erat tempor</p>
+                    </div>
                 </div>
 
             </div>
-        </div>
-    </section>
-    <!-- End Start Today -->
 
-    <!-- Start Schedule -->
-    <section class="schedule" id="schedule">
-        <div class="container">
-            <div class="content">
-                <div class="box text wow slideInLeft">
-                    <h2>Classes Schedule</h2>
-                    <p>
-                        Our gym's class schedule is designed to cater to your fitness needs with a variety of classes
-                        throughout the week. From early morning yoga sessions to evening strength training, our
-                        timetable offers flexibility for busy lifestyles. Explore our diverse classes to find the
-                        perfect fit for your fitness journey.
-                    </p>
-                    <img src="images/schedule1.png" alt="schedule" />
+        </section>
+
+        <section class="container--5">
+            <h4 class="con-5_h4">Subscribe Our Newsletter</h4>
+            <p class="con-5_p">Subscribe and get Our latest article in your inbox</p>
+            <form>
+                <div class="con-5_form">
+                    <input placeholder="Your Email">
+                    <button>Subscribe</button>
                 </div>
-                <div class="box timing wow slideInRight">
-                    <table class="table">
-                        <tbody>
+            </form>
+        </section>
+
+        <section class="container--6">
+            <h4 class="timetable">Class Timetable</h4>
+            <h4 class="workinghours">Working Hours and Class Time</h4>
+            <div class="table">
+                <ul class="classes">
+                    <li class="nav-item">
+                        <a id="allclasses" class="nav-link class-btn td-active">All Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="cardio" class="nav-link class-btn">Cardio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="crossfit" class="nav-link class-btn">Crossfit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="powerlifting" class="nav-link class-btn">Powerlifting</a>
+                    </li>
+                </ul>
+                <div class="table-responsive">
+                    <table class="table-bordered">
+                        <thead class="bg-secondary text-white text-center">
                             <tr>
-                                <td class="day">Monday</td>
-                                <td><strong>9:00 AM</strong></td>
-                                <td>Body Building <br /> 9:00 to 10:00 AM</td>
-                                <td>Room No:210</td>
+                                <th>Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <th class="bg-secondary">6.00am - 8.00am</th>
+                                <td>
+                                    <h5>Cardio</h5>John Deo
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Crossfit</h5>Adam Phillips
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Power Lifting</h5>Murad Balayev
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Cardio</h5>John Deo
+                                </td>
                             </tr>
                             <tr>
-                                <td class="day">Tuesday</td>
-                                <td><strong>9:00 AM</strong></td>
-                                <td>Body Building <br /> 9:00 to 10:00 AM</td>
-                                <td>Room No:210</td>
+                                <th class="bg-secondary">10.00am - 12.00am</th>
+                                <td></td>
+                                <td>
+                                    <h5>Power Lifting</h5>James Alien
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Cardio</h5>John Deo
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Crossfit</h5>Adam Phillips
+                                </td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td class="day">Wednesday</td>
-                                <td><strong>9:00 AM</strong></td>
-                                <td>Body Building <br /> 9:00 to 10:00 AM</td>
-                                <td>Room No:210</td>
+                                <th class="bg-secondary ">5.00pm - 7.00pm</th>
+                                <td>
+                                    <h5>Crossfit</h5>Adam Phillips
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Power Lifting</h5>Murad Balayev
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Cardio</h5>John Deo
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Crossfit</h5>Adam Phillips
+                                </td>
                             </tr>
                             <tr>
-                                <td class="day">Thursday</td>
-                                <td><strong>9:00 AM</strong></td>
-                                <td>Body Building <br /> 9:00 to 10:00 AM</td>
-                                <td>Room No:210</td>
-                            </tr>
-                            <tr>
-                                <td class="day">Friday</td>
-                                <td><strong>9:00 AM</strong></td>
-                                <td>Body Building <br /> 9:00 to 10:00 AM</td>
-                                <td>Room No:210</td>
-                            </tr>
-                            <tr>
-                                <td class="day">Saturday</td>
-                                <td><strong>9:00 AM</strong></td>
-                                <td>Body Building <br /> 9:00 to 10:00 AM</td>
-                                <td>Room No:210</td>
+                                <th class="bg-secondary ">7.00pm - 9.00pm</th>
+                                <td></td>
+                                <td>
+                                    <h5>Cardio</h5>John Deo
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Crossfit</h5>Adam Phillips
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h5>Power Lifting</h5>Murad Balayev
+                                </td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Schedule -->
+        </section>
 
+        <section class="container--7 bmi">
+            <div class="con-7">
+                <div class="con-7_left">
+                    <h4 class="bm-index">Body Mass Index</h4>
+                    <h4 class="wi-bmi">What is BMI?</h4>
+                    <p>Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of
+                        height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight
+                        categories that may lead to health problems, but it does not diagnose the body fatness or health
+                        of an individual.</p>
+                </div>
+                <div class="con-7_right">
+                    <div class="right-inner">
+                        <h1>Calculate your BMI</h1>
+                        <form>
+                            <div class="form-row">
+                                <div class=" form-group">
+                                    <input type="number" id="weight" placeholder="Weight (KG)">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" id="height" placeholder="Height (CM)">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="number" id="age" placeholder="Age">
+                                </div>
+                                <div class="form-group">
+                                    <select>
+                                        <option selected disabled>Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <input type="button" id="calculate" class="input-btn" value="Calculate Now">
+                            </div>
+                            <div id="bmi" class="bmii">
 
-    <!-- Start Gallery -->
-    <section class="gallery" id="gallery">
-        <h2>Workout Gallery</h2>
-        <div class="content">
-            <div class="box wow slideInLeft">
-                <img src="images/gallery1.jpg" alt="gallery" />
-            </div>
-            <div class="box wow slideInRight">
-                <img src="images/gallery2.jpg" alt="gallery" />
-            </div>
-            <div class="box wow slideInLeft">
-                <img src="images/gallery3.jpg" alt="gallery" />
-            </div>
-            <div class="box wow slideInRight">
-                <img src="images/gallery4.jpg" alt="gallery" />
-            </div>
-        </div>
-    </section>
-    <!-- End Gallery -->
-
-    <!-- Start Price -->
-    <section class="price-package" id="price">
-        <div class="container">
-            <h2>Choose Your Package</h2>
-            <p class="title-p">At our gym, you have the flexibility to choose the membership package that best aligns
-                with your fitness journey. Whether you're looking for a month-to-month plan, a discounted annual
-                membership, or a premium package with additional perks, we have options to suit your needs. Explore our
-                membership packages today and take the first step toward achieving your fitness goals. </p>
-            <div class="content">
-                <div class="box wow bounceInUp">
-                    <div class="inner">
-                        <div class="price-tag">
-                            ₹ 1999 <small>permonth</small>
-                        </div>
-                        <div class="img">
-                            <img src="images/price1.jpg" alt="price" />
-                        </div>
-                        <div class="text">
-                            <h3>Body Building Training</h3>
-                            <p>Get Free WiFi</p>
-                            <p>Month to Month</p>
-                            <p>Lounge area</p>
-                            <p style="text-decoration: line-through;">Personal trainers</p>
-                            <p style="text-decoration: line-through;">No Time Restrictions</p>
-                            <p style="text-decoration: line-through;">Gym and Cardio</p>
-                            <p style="text-decoration: line-through;">Service Locker Rooms</p>
-                            <a href="" class="btn">Join Now</a>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="box wow bounceInUp" data-wow-delay="0.2s">
-                    <div class="inner">
-                        <div class="price-tag">
-                            ₹ 3999 <small>permonth</small>
+            </div>
+        </section>
+
+        <section class="container--8">
+            <div class="con-8">
+                <h4 class="con-8_h4">Our Trainers</h4>
+                <h4 class="con-8_h4-1">Meet Our Expert Trainers</h4>
+                <div class="con-8_boxes">
+                    <div class="con-8_box">
+                        <div class="con-8_box-up">
+                            <img class="card-img-top" src="./src1/img/anabolicmurad.jpeg" alt="">
                         </div>
-                        <div class="img">
-                            <img src="images/price2.jpg" alt="price" />
-                        </div>
-                        <div class="text">
-                            <h3>Body Building Training</h3>
-                            <p>Get Free WiFi</p>
-                            <p>Month to Month</p>
-                            <p>Service Locker Rooms</p>
-                            <p style="text-decoration: line-through;">Personal trainers</p>
-                            <p style="text-decoration: line-through;">No Time Restrictions</p>
-                            <p style="text-decoration: line-through;">Gym and Cardio</p>
-                            <p style="text-decoration: line-through;">Lounge area</p>
-                            <a href="" class="btn">Join Now</a>
+                        <div class="con-8_box-down">
+                            <h4>Murad Balayev</h4>
+                            <p>Trainer</p>
+                            <button class="btn">Contact</button>
                         </div>
                     </div>
-                </div>
-                <div class="box wow bounceInUp" data-wow-delay="0.4s">
-                    <div class="inner">
-                        <div class="price-tag">
-                            ₹ 7999 <small>permonth</small>
+                    <div class="con-8_box">
+                        <div class="con-8_box-up">
+                            <img class="card-img-top" src="./src1/img/yusif.jpeg" alt="">
                         </div>
-                        <div class="img">
-                            <img src="images/price3.jpg" alt="price" />
+                        <div class="con-8_box-down">
+                            <h4>Yusif Arifoviç</h4>
+                            <p>Trainer</p>
+                            <button class="btn">Contact</button>
                         </div>
-                        <div class="text">
-                            <h3>Body Building Training</h3>
-                            <p>Get Free WiFi</p>
-                            <p>Personal trainers</p>
-                            <p>Month to Month</p>
-                            <p>No Time Restrictions</p>
-                            <p>Gym and Cardio</p>
-                            <p>Lounge area</p>
-                            <p>Service Locker Rooms</p>
-                            <a href="" class="btn">Join Now</a>
+                    </div>
+                    <div class="con-8_box">
+                        <div class="con-8_box-up">
+                            <img class="card-img-top" src="./src1/img/revan.jpeg" alt="">
+                        </div>
+                        <div class="con-8_box-down">
+                            <h4>Revan Ahmedov</h4>
+                            <p>Trainer</p>
+                            <button class="btn">Contact</button>
+                        </div>
+                    </div>
+                    <div class="con-8_box">
+                        <div class="con-8_box-up">
+                            <img class="card-img-top" src="./src1/img/turan.jpeg" alt="">
+                        </div>
+                        <div class="con-8_box-down">
+                            <h4>Turan Suleymanl</h4>
+                            <p>Trainer</p>
+                            <button class="btn">Contact</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Price -->
-
-
-    <!-- Start Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="content">
-                <div class="box form wow slideInLeft">
-                    <form>
-                        <input type="text" placeholder="Enter Name">
-                        <input type="text" placeholder="Enter Email">
-                        <input type="text" placeholder="Enter Mobile">
-                        <textarea placeholder="Enter Message"></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
+        </section>
+        
+        <!-- Blog -->
+        <section class="container--10">
+            <div class="con-10">
+                <div class="con-10_title">
+                    <h4>Our Blog</h4>
+                    <h3>Latest Article From Blog</h3>
                 </div>
-                <div class="box text wow slideInRight">
-                    <h2>Get Connected with Gym</h2>
-                    <p class="title-p">Stay connected with our gym and stay on track with your fitness goals. Join our
-                        community today to access exclusive updates, workout tips, and special promotions. Connect with
-                        us on social media, sign up for our newsletter, or visit our website to stay informed and
-                        inspired on your fitness journey.</p>
-                    <div class="info">
-                        <ul>
-                            <li><span class="fa fa-map-marker"></span> Middle St, Mayiladuthurai - 609001</li>
-                            <li><span class="fa fa-phone"></span> +91 63835 4****</li>
-                            <li><span class="fa fa-envelope"></span>bodyblitzgym@gmail.com</li>
-                        </ul>
+                <div class="con-10_boxes">
+                    <div class="blog">
+                        <img class="blog_img" src="./src1/img/blog-1.jpg">
+                        <div class="blog_item">
+                            <div class="blog_column">
+                                <div class="blog_row">
+                                    <div class="rounded-circle">
+                                        <small>29</small>
+                                        <strong>JAN</strong>
+                                        <small>2023</small>
+                                    </div>
+                                    <div class="blog_column-2">
+                                        <h3>Women Workout Program</h3>
+                                        <div class="blog_row_2">
+                                            <div class="blog_row_item">
+                                                <i class="fa fa-user"></i>
+                                                <p>Admin</p>
+                                            </div>
+                                            <div class="blog_row_item">
+                                                <i class="fa fa-folder"></i>
+                                                <p>Web Design</p>
+                                            </div>
+                                            <div class="blog_row_item">
+                                                <i class="fa fa-comments"></i>
+                                                <p>17 Comments</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="blog_p"><b>10 Week Upper/Lower Workout Program for Women</b><br>
+                                    Build muscle with this upper/lower workout for women. It combines lower rep ranges
+                                    with higher rep ranges on both upper & lower days to maximize your results!</p>
+                                <a class="blog_btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="social">
-                        <a href=""><span class="fa fa-facebook"></span></a>
-                        <a href=""><span class="fa fa-linkedin"></span></a>
-                        <a href=""><span class="fa fa-skype"></span></a>
-                        <a href=""><span class="fa fa-youtube-play"></span></a>
-                    </div>
-
-                    <div class="copy">
-                        &copy; BodyBlitz Gym. All Rights Reserved.
-                        <br>
-
+                    <div class="blog">
+                        <img class="blog_img" src="./src1/img/blog-2.jpg">
+                        <div class="blog_item">
+                            <div class="blog_column">
+                                <div class="blog_row">
+                                    <div class="rounded-circle">
+                                        <small>13</small>
+                                        <strong>FEB</strong>
+                                        <small>2023</small>
+                                    </div>
+                                    <div class="blog_column-2">
+                                        <h3>Man Workout Program</h3>
+                                        <div class="blog_row_2">
+                                            <div class="blog_row_item">
+                                                <i class="fa fa-user"></i>
+                                                <p>Admin</p>
+                                            </div>
+                                            <div class="blog_row_item">
+                                                <i class="fa fa-folder"></i>
+                                                <p>Web Design</p>
+                                            </div>
+                                            <div class="blog_row_item">
+                                                <i class="fa fa-comments"></i>
+                                                <p>128 Comments</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="blog_p"><b>Upper/Lower 4 Day Bodybuilding Workout</b><br>
+                                    Reach your muscle building goals with this balanced 4 day training split that mixes
+                                    heavy compound exercises, machines, cables and incorporates 3 second negatives.</p>
+                                <a class="blog_btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p style="text-align: center;"></p>
-            <p style="text-align: center;">Desgin and Developed By <a href="https://swamithedev.vercel.app/"
-                    target="_blank" style="text-decoration: none;color:white;letter-spacing: 1px;">SoumyadipOjha</a>
+        </section>
+        <!-- Blog End-->
+
+    </main>
+    <footer>
+        <div class="footr">
+            <div class="footer_blocks">
+                <div class="footer_box">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fa fa-map-marker-alt"></i>Azerbaijan, Baku</p>
+                    <p><i class="fa fa-phone-alt"></i>+994 50 740 50 70</p>
+                    <p><i class="fa fa-envelope"></i>muradbalazade@gmail.com</p>
+                    <div class="socials">
+                        <a style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer_box">
+                    <h4>Quick Links</h4>
+                    <div class="footer_links">
+                        <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                        <a href="./src1/pages/about.html"><i class="fa fa-angle-right"></i>About Us</a>
+                        <a href="./src1/pages/features.html"><i class="fa fa-angle-right"></i>Our Features</a>
+                        <a href="./src1/pages/classes.html"><i class="fa fa-angle-right"></i>Classes</a>
+                        <a href="./src1/pages/contact.html"><i class="fa fa-angle-right"></i>Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="footer_box">
+                    <h4>Popular Links</h4>
+                    <div class="footer_links">
+                        <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                        <a href="./src1/pages/about.html"><i class="fa fa-angle-right"></i>About Us</a>
+                        <a href="./src1/pages/features.html"><i class="fa fa-angle-right"></i>Our Features</a>
+                        <a href="./src1/pages/classes.html"><i class="fa fa-angle-right"></i>Classes</a>
+                        <a href="./src1/pages/contact.html"><i class="fa fa-angle-right"></i>Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="footer_box">
+                    <h4>Opening hours<h4>
+                            <h5>Monday - Friday</h5>
+                            <p class="time">8.00 AM - 8.00 PM</p>
+                            <h5>Saturday - Sunday</h5>
+                            <p class="time">2.00 PM - 8.00 PM</p>
+                </div>
+
+            </div>
+            <p class="rights">
+                <b> © AnabolicGYM</b>. All Rights Reserved. Designed by <a target="_blank"
+                    href="https://www.instagram.com/mouradbalayev">Murad Balayev</a>
             </p>
         </div>
-    </section>
-    <!-- End Contact -->
-    <!-- <div class="sticky-button">
-        <a href="choice.html">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </div> -->
-    <div class="whatsapp-btn-container">
-        <a class="whatsapp-btn" href="https://wa.me/918670226518"><i class="fab fa-whatsapp"></i></a>
-        <span>Contact Us</span>
-    </div>
-
-
-    <!-- <div id="container">
-        <button1 class="learn-more" id="stickyButton" onclick="why()">
-            <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Why</span>
-        </button1>
-    </div> -->
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </footer>
+    <script src="./src1/js/main.js"></script>
+    <script src="./src1/js/bmi.js"></script>
+    <script src="./src1/js/table.js"></script>
 </body>
-<script>
-    
-    function choice() {
-        window.location.href = "choice.html";
-    }
-    $(document).ready(function () {
-
-        $(".ham-burger, .nav ul li a").click(function () {
-
-            $(".nav").toggleClass("open")
-
-            $(".ham-burger").toggleClass("active");
-        })
-        $(".accordian-container").click(function () {
-            $(".accordian-container").children(".body").slideUp();
-            $(".accordian-container").removeClass("active")
-            $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
-            $(this).children(".body").slideDown();
-            $(this).addClass("active")
-            $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
-        })
-
-        $(".nav ul li a, .go-down").click(function (event) {
-            if (this.hash !== "") {
-
-                event.preventDefault();
-
-                var hash = this.hash;
-
-                $('html,body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    window.location.hash = hash;
-                });
-
-                // add active class in navigation
-                $(".nav ul li a").removeClass("active")
-                $(this).addClass("active")
-            }
-        })
-    })
-
-</script>
-<script src="min.js"></script>
-<script>
-    wow = new WOW(
-        {
-            animateClass: 'animated',
-            offset: 0,
-        }
-    );
-    wow.init();
-</script>
 
 </html>
