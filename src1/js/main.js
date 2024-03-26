@@ -15,8 +15,8 @@ remove.addEventListener('click', function () {
 })
 
 function join(){
-    window.open("http://127.0.0.1:3000/choice.html");
+    window.location.href="choice.html";
 }
 function trainer(){
-    window.open("http://127.0.0.1:3000/trainercontact.html");
+    window.location.href="trainercontact.html";
 }
