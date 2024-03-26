@@ -14,3 +14,9 @@ remove.addEventListener('click', function () {
     hamburgermenu.classList.remove('hamburgermenu-open')
 })
 
+function join(){
+    window.open("http://127.0.0.1:3000/choice.html");
+}
+function trainer(){
+    window.open("http://127.0.0.1:3000/trainercontact.html");
+}
