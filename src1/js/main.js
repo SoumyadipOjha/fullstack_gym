@@ -18,5 +18,5 @@ function join(){
     window.location.href="choice.html";
 }
 function trainer(){
-    window.location.href="trainercontact.html";
+    window.location.href="/trainercontact.html";
 }
