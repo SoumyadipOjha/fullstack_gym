@@ -71,7 +71,7 @@ app.use(
   })
 );
 
-mongoose.connect("mongodb://localhost:27017/Database");
+mongoose.connect("mongodb+srv://soumyadipojha635:WZJOfLt8Cbf3rwbY@cluster0.njhxvfj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0mongodb://localhost:27017/Database");
 var db = mongoose.connection;
 db.on("error", () => console.log("Error in Connecting to Database"));
 db.once("open", () => console.log("Connected to Database"));
