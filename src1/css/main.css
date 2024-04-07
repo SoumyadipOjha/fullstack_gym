@@ -146,9 +146,9 @@ header {
 }
 
 .brand {
-    color: #fff !important;
+    color: #2f2621 !important;
     font-family: Oswald, sans-serif;
-    font-size: 3.5rem;
+    font-size: 7rem;
     font-weight: 700 !important;
     letter-spacing: 2px;
     text-transform: uppercase !important;
@@ -204,7 +204,7 @@ header {
 }
 
 .head__inner h3 {
-    color: #e31c25 !important;
+    color: #dfbabc !important;
     font-family: Oswald, sans-serif;
     font-weight: 500;
     line-height: 1.2;
@@ -245,7 +245,7 @@ header {
     position: relative;
     display: inline-block;
     padding: 1.25rem 1.9rem;
-    color: #e31c25;
+    color: #ffffff;
     font-size: 1.3rem;
     text-shadow: 0 0 20px #e31c25!important;
     font-weight: 700;
